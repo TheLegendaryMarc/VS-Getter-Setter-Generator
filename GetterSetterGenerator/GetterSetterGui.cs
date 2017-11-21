@@ -29,14 +29,14 @@ namespace GetterSetterGenerator
             }
             else
             {
-                //Clipboard.SetData(generate(var, type, access), TextDataFormat.Html);
-                richoutput.Text = generate(var, type, access);
+                System.Windows.Forms.Clipboard.SetText(generate(var, type, access));
+                label4.Visible = true;
             }
         }
 
         private string generate(string var, string type, string access)
         {
-            return access + " " + type + " get" + type + "()" + Environment.NewLine + "  {" + Environment.NewLine + "     return " + var + ";" + Environment.NewLine + "   }" + Environment.NewLine + " " + access + " void set" + var + "(" + type + " p" + var + ")" + Environment.NewLine + "   {" + Environment.NewLine + var + " = p" + var + ";" + Environment.NewLine + "   }";
+            return access + " " + type + " get" + var + "()" + Environment.NewLine + "  {" + Environment.NewLine + "     return " + var + ";" + Environment.NewLine + "   }" + Environment.NewLine + " " + access + " void set" + var + "(" + type + " p" + var + ")" + Environment.NewLine + "   {" + Environment.NewLine + var + " = p" + var + ";" + Environment.NewLine + "   }";
         }
     }
 }

@@ -1,0 +1,17 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="GetterSetterGenerator.Microsoft.8d0dff94-10b5-4069-af44-0835dd535034" Version="1.0" Language="de-DE" Publisher="Microsoft" />
+    <DisplayName>GetterSetterGenerator</DisplayName>
+    <Description xml:space="preserve">An Visual Studio Plugin for Generating Getters and Setters</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="GetterSetterGenerator.pkgdef" />
+  </Assets>
+</PackageManifest>

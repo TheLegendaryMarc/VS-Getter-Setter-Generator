@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtvar = new System.Windows.Forms.TextBox();
             this.btnstart = new System.Windows.Forms.Button();
-            this.richoutput = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +51,7 @@
             // 
             this.selectaccess.FormattingEnabled = true;
             this.selectaccess.Items.AddRange(new object[] {
-            "protected",
+            "private",
             "public"});
             this.selectaccess.Location = new System.Drawing.Point(15, 25);
             this.selectaccess.Name = "selectaccess";
@@ -109,22 +109,22 @@
             this.btnstart.UseVisualStyleBackColor = true;
             this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
             // 
-            // richoutput
+            // label4
             // 
-            this.richoutput.AcceptsTab = true;
-            this.richoutput.Location = new System.Drawing.Point(15, 52);
-            this.richoutput.Name = "richoutput";
-            this.richoutput.ReadOnly = true;
-            this.richoutput.Size = new System.Drawing.Size(514, 262);
-            this.richoutput.TabIndex = 7;
-            this.richoutput.Text = "";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(208, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Code wurde in die Zwischenablage kopiert";
+            this.label4.Visible = false;
             // 
             // GetterSetterGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 326);
-            this.Controls.Add(this.richoutput);
+            this.ClientSize = new System.Drawing.Size(545, 77);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnstart);
             this.Controls.Add(this.txtvar);
             this.Controls.Add(this.label3);
@@ -152,6 +152,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtvar;
         private System.Windows.Forms.Button btnstart;
-        private System.Windows.Forms.RichTextBox richoutput;
+        private System.Windows.Forms.Label label4;
     }
 }

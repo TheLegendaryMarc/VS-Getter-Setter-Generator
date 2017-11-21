@@ -1,0 +1,4 @@
+C:\Users\Marc\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\GetterSetterGenerator\1.0\\GetterSetterGenerator.dll
+C:\Users\Marc\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\GetterSetterGenerator\1.0\\GetterSetterGenerator.pdb
+C:\Users\Marc\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\GetterSetterGenerator\1.0\\GetterSetterGenerator.pkgdef
+C:\Users\Marc\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Microsoft\GetterSetterGenerator\1.0\\extension.vsixmanifest
