@@ -36,6 +36,7 @@
             this.txtvar = new System.Windows.Forms.TextBox();
             this.btnstart = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -96,16 +97,16 @@
             // 
             this.txtvar.Location = new System.Drawing.Point(269, 25);
             this.txtvar.Name = "txtvar";
-            this.txtvar.Size = new System.Drawing.Size(179, 20);
+            this.txtvar.Size = new System.Drawing.Size(264, 20);
             this.txtvar.TabIndex = 5;
             // 
             // btnstart
             // 
-            this.btnstart.Location = new System.Drawing.Point(454, 23);
+            this.btnstart.Location = new System.Drawing.Point(373, 51);
             this.btnstart.Name = "btnstart";
-            this.btnstart.Size = new System.Drawing.Size(75, 23);
+            this.btnstart.Size = new System.Drawing.Size(160, 23);
             this.btnstart.TabIndex = 6;
-            this.btnstart.Text = "Go";
+            this.btnstart.Text = "Copy in Clipboard and Exit";
             this.btnstart.UseVisualStyleBackColor = true;
             this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
             // 
@@ -119,11 +120,22 @@
             this.label4.Text = "Code wurde in die Zwischenablage kopiert";
             this.label4.Visible = false;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(357, 5);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(119, 17);
+            this.checkBox1.TabIndex = 8;
+            this.checkBox1.Text = "Variable deklarieren";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // GetterSetterGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(545, 77);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnstart);
             this.Controls.Add(this.txtvar);
@@ -153,5 +165,6 @@
         private System.Windows.Forms.TextBox txtvar;
         private System.Windows.Forms.Button btnstart;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

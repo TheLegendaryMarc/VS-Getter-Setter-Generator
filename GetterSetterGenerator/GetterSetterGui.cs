@@ -30,13 +30,22 @@ namespace GetterSetterGenerator
             else
             {
                 System.Windows.Forms.Clipboard.SetText(generate(var, type, access));
+                this.Close();
                 label4.Visible = true;
             }
         }
 
         private string generate(string var, string type, string access)
         {
+            if (checkBox1.Checked)
+            {
+                return access + " " + type + " " + var + ";" + Environment.NewLine + access + " " + type + " get" + var + "()" + Environment.NewLine + "  {" + Environment.NewLine + "     return " + var + ";" + Environment.NewLine + "   }" + Environment.NewLine + " " + access + " void set" + var + "(" + type + " p" + var + ")" + Environment.NewLine + "   {" + Environment.NewLine + var + " = p" + var + ";" + Environment.NewLine + "   }";
+            }
+            else
+            {
             return access + " " + type + " get" + var + "()" + Environment.NewLine + "  {" + Environment.NewLine + "     return " + var + ";" + Environment.NewLine + "   }" + Environment.NewLine + " " + access + " void set" + var + "(" + type + " p" + var + ")" + Environment.NewLine + "   {" + Environment.NewLine + var + " = p" + var + ";" + Environment.NewLine + "   }";
+
+            }
         }
     }
 }
