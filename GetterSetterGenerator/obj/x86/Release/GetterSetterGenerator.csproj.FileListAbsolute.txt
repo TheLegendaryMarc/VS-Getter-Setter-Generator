@@ -124,7 +124,6 @@ C:\Users\Marc\Documents\GitHub\VS-Getter-Setter-Generator\GetterSetterGenerator\
 C:\Users\Marc\Documents\GitHub\VS-Getter-Setter-Generator\GetterSetterGenerator\bin\x86\Release\Microsoft.VisualStudio.ProjectAggregator.xml
 C:\Users\Marc\Documents\GitHub\VS-Getter-Setter-Generator\GetterSetterGenerator\bin\x86\Release\Microsoft.VisualStudio.ImageCatalog.xml
 C:\Users\Marc\Documents\GitHub\VS-Getter-Setter-Generator\GetterSetterGenerator\bin\x86\Release\Microsoft.VisualStudio.CoreUtility.xml
-C:\Users\Marc\Documents\GitHub\VS-Getter-Setter-Generator\GetterSetterGenerator\obj\x86\Release\GetterSetterGenerator.csprojResolveAssemblyReference.cache
 C:\Users\Marc\Documents\GitHub\VS-Getter-Setter-Generator\GetterSetterGenerator\obj\x86\Release\VSPackage.resources
 C:\Users\Marc\Documents\GitHub\VS-Getter-Setter-Generator\GetterSetterGenerator\obj\x86\Release\GetterSetterGenerator.GetterSetterGui.resources
 C:\Users\Marc\Documents\GitHub\VS-Getter-Setter-Generator\GetterSetterGenerator\obj\x86\Release\GetterSetterGenerator.csproj.GenerateResource.Cache

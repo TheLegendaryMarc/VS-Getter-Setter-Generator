@@ -21,31 +21,22 @@ namespace GetterSetterGenerator
         {
             string var = txtvar.Text;
             string type = selecttype.Text;
-            string access = selectaccess.Text;
 
-            if (var == null || type == null || access == null)
+            if (var == null || type == null)
             {
                 MessageBox.Show("Bitte überprüfen sie ihre Eingaben");
             }
             else
             {
-                System.Windows.Forms.Clipboard.SetText(generate(var, type, access));
+                System.Windows.Forms.Clipboard.SetText(generate(var, type));
                 this.Close();
                 label4.Visible = true;
             }
         }
 
-        private string generate(string var, string type, string access)
+        private string generate(string var, string type)
         {
-            if (checkBox1.Checked)
-            {
-                return access + " " + type + " " + var + ";" + Environment.NewLine + access + " " + type + " get" + var + "()" + Environment.NewLine + "  {" + Environment.NewLine + "     return " + var + ";" + Environment.NewLine + "   }" + Environment.NewLine + " " + access + " void set" + var + "(" + type + " p" + var + ")" + Environment.NewLine + "   {" + Environment.NewLine + var + " = p" + var + ";" + Environment.NewLine + "   }";
-            }
-            else
-            {
-            return access + " " + type + " get" + var + "()" + Environment.NewLine + "  {" + Environment.NewLine + "     return " + var + ";" + Environment.NewLine + "   }" + Environment.NewLine + " " + access + " void set" + var + "(" + type + " p" + var + ")" + Environment.NewLine + "   {" + Environment.NewLine + var + " = p" + var + ";" + Environment.NewLine + "   }";
-
-            }
+                return "private " + type + " " + var + ";" + Environment.NewLine +"public " + type + " get" + var + "()" + Environment.NewLine + "  {" + Environment.NewLine + "     return " + var + ";" + Environment.NewLine + "   }" + Environment.NewLine + "public void set" + var + "(" + type + " p" + var + ")" + Environment.NewLine + "   {" + Environment.NewLine + var + " = p" + var + ";" + Environment.NewLine + "   }";
         }
     }
 }
